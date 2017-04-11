@@ -1,0 +1,12 @@
+<h2>Repositórios:</h2>
+<card-repo
+    ng-if="$ctrl.repos.length > 0"
+    ng-repeat="repo in $ctrl.repos"
+    repo="repo">
+</card-repo>
+<pager ng-if="$ctrl.publicRepos > $ctrl.limit"
+       page-back="$ctrl.pageBack"
+       page-next="$ctrl.pageNext"
+       page="$ctrl.page"
+       total-pages="$ctrl.totalPages">
+</pager>
